@@ -29,6 +29,7 @@ public class LightController : MonoBehaviour
         //使用フラグによってLightオブジェクトの表示/非表示
         if (_isUseLight) _lightObj.SetActive(true);
         else _lightObj.SetActive(false);
+        //_lightObj.SetActive(_isUseLight); <= 上二行はこれ1行で書き換えられる
     }
 
     void Update()
